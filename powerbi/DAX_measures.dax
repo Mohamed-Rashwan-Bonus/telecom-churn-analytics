@@ -1,0 +1,34 @@
+// Power BI DAX measures - paste into Modeling > New Measure
+// Tables: customers, subscriptions, usage_monthly, billing, support_tickets, network_quality, churn_labels
+
+Total Customers = DISTINCTCOUNT(customers[customer_id])
+
+Churned Customers = CALCULATE(COUNTROWS(churn_labels), churn_labels[churned] = 1)
+
+Churn Rate % = DIVIDE([Churned Customers], [Total Customers]) * 100
+
+Avg Monthly Charge = AVERAGE(subscriptions[monthly_charge_egp])
+
+Avg Tenure Months = AVERAGE(subscriptions[tenure_months])
+
+Total Revenue EGP = SUM(subscriptions[total_charge_egp])
+
+Avg Satisfaction = AVERAGE(support_tickets[satisfaction_score])
+
+Total Tickets = COUNTROWS(support_tickets)
+
+Ticket Resolution % = DIVIDE(CALCULATE(COUNTROWS(support_tickets), support_tickets[resolved]="Yes"), COUNTROWS(support_tickets)) * 100
+
+Avg Downtime Hrs = AVERAGE(usage_monthly[downtime_hours])
+
+Late Payment % = DIVIDE(CALCULATE(COUNTROWS(billing), billing[late_days] > 0), COUNTROWS(billing)) * 100
+
+Churn Rate MoM Contract = CALCULATE([Churn Rate %], customers[contract_type] = "Month-to-month")
+
+Churn Rate Fiber = CALCULATE([Churn Rate %], subscriptions[internet_service] = "Fiber")
+
+High Risk Customers = CALCULATE(COUNTROWS(churn_labels), churn_labels[churn_probability_raw] > 0.6)
+
+CLV Lost to Churn = CALCULATE(SUM(churn_labels[clv_egp]), churn_labels[churned] = 1)
+
+Revenue at Risk = CALCULATE(SUMX(subscriptions, subscriptions[monthly_charge_egp] * 12), churn_labels[churn_probability_raw] > 0.6)

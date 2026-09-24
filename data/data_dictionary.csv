@@ -1,0 +1,39 @@
+table,column,meaning,example
+customers,customer_id,unique id,C10001
+customers,gender,Male/Female,Male
+customers,age,years,34
+customers,city,Cairo etc,Cairo
+customers,region,5 regions,Greater Cairo
+customers,join_date,first join,2021-03-14
+customers,contract_type,Month-to-month / One year / Two year,Month-to-month
+customers,payment_method,how they pay,Electronic check
+customers,senior_citizen,60+ Yes/No,No
+customers,partner,has partner Yes/No,Yes
+customers,dependents,has dependents,No
+customers,paperless_billing,ebill Yes/No,Yes
+subscriptions,sub_id,unique sub,S10001
+subscriptions,plan_name,Basic Plus Ultra Business,Plus
+subscriptions,internet_service,DSL Fiber 5G No Internet,Fiber
+subscriptions,monthly_charge_egp,monthly bill EGP,385.5
+subscriptions,total_charge_egp,lifetime EGP,4620.0
+subscriptions,tenure_months,months with us,14
+usage_monthly,calls_minutes,voice per month,320
+usage_monthly,data_gb,internet GB,41.2
+usage_monthly,downtime_hours,no service hours,1.2
+usage_monthly,slow_days,slow internet days,2
+billing,amount_due_egp,bill EGP,380.0
+billing,amount_paid_egp,paid EGP,380.0
+billing,late_days,days late,0
+billing,payment_failures,failed tries,0
+support_tickets,category,Network Billing Technical Account,Network
+support_tickets,satisfaction_score,1-5 stars,3
+support_tickets,resolved,fixed Yes/No,Yes
+support_tickets,handling_time_hours,hours to close,18
+network_quality,avg_signal_bars,1-5 bars,4.1
+network_quality,drop_rate_pct,calls dropped %,1.4
+network_quality,avg_speed_mbps,internet speed,52.0
+network_quality,outage_hours,network down hours,1.0
+churn_labels,churned,1 left 0 stayed,1
+churn_labels,churn_reason,why they left,Price
+churn_labels,churn_probability_raw,base risk 0-1,0.72
+churn_labels,clv_egp,customer lifetime value EGP,5400.0

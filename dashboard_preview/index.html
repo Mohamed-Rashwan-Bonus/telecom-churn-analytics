@@ -1,0 +1,27 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Telecom Churn Dashboard Preview</title>
+<style>body{font-family:Segoe UI,Arial;margin:0;background:#0f172a;color:#e2e8f0}header{background:#f8fafc;color:#0f172a;padding:18px 24px;display:flex;gap:16px;align-items:center}header img{height:52px}.wrap{padding:20px;max-width:1200px;margin:auto}.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}.kpi{background:#1e293b;padding:16px;border-radius:12px;border-left:5px solid #facc15}.kpi b{font-size:26px;display:block}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:14px;margin-top:14px}.card{background:#fff;color:#111;border-radius:12px;padding:12px}.card img{width:100%;border-radius:8px}.note{background:#fef9c3;color:#713f12;padding:12px;border-radius:10px;margin-top:14px}</style></head>
+<body>
+<header><div><h2 style="margin:0">Telecom Customer Churn Analytics</h2><small>Power BI preview - 5000 customers - 133k rows - by Mohamed Rashwan</small></div></header>
+<div class="wrap">
+<div class="kpis">
+<div class="kpi"><small>Total customers</small><b>5,000</b></div>
+<div class="kpi" style="border-color:#ef4444"><small>Churn rate</small><b>42.86%</b></div>
+<div class="kpi" style="border-color:#22c55e"><small>Model accuracy</small><b>71.3%</b></div>
+<div class="kpi" style="border-color:#38bdf8"><small>ROC-AUC</small><b>0.779</b></div>
+<div class="kpi"><small>Usage rows</small><b>60,000</b></div>
+<div class="kpi"><small>Tickets</small><b>8,500</b></div>
+</div>
+<div class="note">This is a static preview. Open the same charts in Power BI using /powerbi/data_model_and_dashboard.md + DAX_measures.dax. All images below are auto-generated in /analysis/charts.</div>
+<div class="grid">
+<div class="card"><h4>Overall churn</h4><img src="../analysis/charts/01_overall_churn.png"></div>
+<div class="card"><h4>Churn by contract</h4><img src="../analysis/charts/02_churn_by_contract.png"></div>
+<div class="card"><h4>Churn by plan</h4><img src="../analysis/charts/03_churn_by_plan.png"></div>
+<div class="card"><h4>Monthly charge</h4><img src="../analysis/charts/08_monthly_charge_hist.png"></div>
+<div class="card"><h4>Tenure</h4><img src="../analysis/charts/09_tenure_hist.png"></div>
+<div class="card"><h4>Feature importance</h4><img src="../analysis/charts/13_feature_importance.png"></div>
+<div class="card"><h4>Confusion matrix</h4><img src="../analysis/charts/12_confusion_matrix.png"></div>
+<div class="card"><h4>Satisfaction vs churn</h4><img src="../analysis/charts/10_satisfaction_churn.png"></div>
+</div>
+<p style="opacity:.7">Tip: run <code>py ml/predict.py</code> to score new customers, then load predictions.csv into Power BI page 5.</p>
+</div></body></html>

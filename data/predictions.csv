@@ -1,0 +1,6 @@
+gender,city,region,contract_type,payment_method,senior_citizen,partner,dependents,paperless_billing,plan_name,internet_service,phone_service,multiple_lines,online_security,tech_support,streaming_tv,device_protection,age,tenure_months,monthly_charge_egp,total_charge_egp,calls_mean,data_mean,downtime_mean,slow_mean,app_mean,late_mean,fail_sum,due_mean,paid_ratio,ticket_cnt,sat_mean,hrs_mean,churn_probability,will_churn,risk
+Male,Cairo,Greater Cairo,Month-to-month,Electronic check,No,No,No,Yes,Plus,Fiber,Yes,Yes,No,No,Yes,No,34,4,420,1680,350,45,2.5,3,50,4,1,420,0.8,3,2.0,40,0.6377,1,High
+Male,Cairo,Greater Cairo,Month-to-month,Electronic check,No,No,No,Yes,Plus,Fiber,Yes,Yes,No,No,Yes,No,34,4,420,1680,350,45,2.5,3,50,4,1,420,0.8,3,2.0,40,0.6377,1,High
+Male,Cairo,Greater Cairo,Month-to-month,Electronic check,No,No,No,Yes,Plus,Fiber,Yes,Yes,No,No,Yes,No,34,4,420,1680,350,45,2.5,3,50,4,1,420,0.8,3,2.0,40,0.6377,1,High
+Male,Cairo,Greater Cairo,Month-to-month,Electronic check,No,No,No,Yes,Plus,Fiber,Yes,Yes,No,No,Yes,No,34,4,420,1680,350,45,2.5,3,50,4,1,420,0.8,3,2.0,40,0.6377,1,High
+Male,Cairo,Greater Cairo,Month-to-month,Electronic check,No,No,No,Yes,Plus,Fiber,Yes,Yes,No,No,Yes,No,34,4,420,1680,350,45,2.5,3,50,4,1,420,0.8,3,2.0,40,0.6377,1,High
